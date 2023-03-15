@@ -28,6 +28,17 @@ import zarr
 if TYPE_CHECKING:
     import napari
 
+"""
+TODOS:
+
+- calculate deltas properly (e.g. we need to know which chunks have been touched)
+- version without API
+- finish checkout
+- show history of commits 
+- add support for readonly from any commit (from history)
+
+"""
+    
 def ZARR_PAINT(self, coord, new_label, refresh=True):
     """Paint over existing labels with a new label, using the selected
         brush shape and size, either only on the visible slice or in all
